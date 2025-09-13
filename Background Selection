@@ -1,0 +1,104 @@
+You don’t need a committee of angels picking backgrounds. You need a tiny theme engine with rules. No AI calls, no designers on standby, no “oops it’s raining so the app is depressing.” Here’s the dead-simple setup.
+
+What picks the background?
+
+A rule-based Theme Selector that uses 4 inputs, in order of priority:
+	1.	User preference (if they picked a favorite pack, honor it)
+	2.	Time of day (dawn, day, dusk, night)
+	3.	Weather (clear, clouds, rain, snow) when permission available
+	4.	Mood (anxious, grateful, tired…) as a gentle tint
+
+No AI. Just a lookup table.
+
+⸻
+
+The assets (keep it cheap)
+	•	Use procedural gradients (code-generated), not heavy photos.
+	•	Add a light noise/texture overlay for depth (one tiny PNG reused).
+	•	Optional: a few Lottie animations (sub-100KB) for “rain micro-dots,” “snow sparkles,” “sun shimmer.”
+
+You now have infinite backgrounds with ~0 storage bloat.
+
+⸻
+
+The mapping (the brain)
+
+Create a small table of palettes keyed by daypart + weather, with a mood tint overlay. Example:
+
+Key	Base Gradient (start → end)	Weather Overlay	Mood Tint (alpha 8–16%)
+dawn+clear	#FAD6A5 → #FFECD2	subtle lens flare	grateful: #FFD166, anxious: #6EC1E4, tired: #8C9EFF
+day+clear	#AEE1F9 → #FFF6E5	soft sun shimmer	same tints
+day+cloud	#D7E3F4 → #F3F6FB	cloud drift	same tints
+day+rain	#B6C6D8 → #E1E8EF	fine rain dots	same tints
+dusk+clear	#F9A1BC → #6C63FF	glow haze	same tints
+night+clear	#1B2A49 → #274690	star sparkle	same tints
+night+cloud	#212833 → #2E3847	none	same tints
+night+rain	#24313C → #3A4856	rain dots	same tints
+snow(any)	#EAF3FA → #FFFFFF	snow sparkle	same tints
+
+If weather isn’t available, ignore that column and just use daypart.
+
+⸻
+
+Selection logic (pseudo)
+
+function pickTheme({userPack, localTime, weather, mood}) {
+  if (userPack) return userPack.pick(localTime); // user > all
+
+  const daypart = getDaypart(localTime); // dawn/day/dusk/night
+  const wx = weather?.status ?? 'none';  // clear/cloud/rain/snow/none
+
+  // 1) choose base by daypart + wx (fallback to daypart if none)
+  const base = palettes[`${daypart}+${wx}`] ?? palettes[`${daypart}+clear`];
+
+  // 2) apply subtle mood tint (alpha 8–16%)
+  const tinted = applyMoodTint(base, moodTint[mood] ?? moodTint.neutral);
+
+  // 3) ensure contrast for text/icons (raise or lower luminance)
+  return adjustForContrast(tinted, targetWCAG=4.5);
+}
+
+Every 4 hours (or on app open) you rerun this. Smoothly cross-fade 300–500 ms so it feels intentional, not jumpy.
+
+⸻
+
+Weather without pain
+	•	If permission granted: query once on open, cache for 2–3 hours.
+	•	If denied: skip weather entirely; your daypart palettes already look great.
+	•	Don’t hard-depend on weather APIs; treat them as a nice-to-have.
+
+⸻
+
+Avoid ugly combos
+	•	Clamp saturation at night so neon doesn’t blind users.
+	•	If “anxious” mood + “rain” + “night” would be too gloomy, cap mood tint at 8% and switch overlay to a calm haze instead of rain.
+	•	Keep a “serene failsafe” palette if contrast checks fail.
+
+⸻
+
+Accessibility and legibility
+	•	Always run a WCAG contrast check between foreground (verse text, buttons) and final background; auto-nudge brightness to meet 4.5:1.
+	•	Offer a High-Contrast toggle in settings.
+	•	Respect system dark mode by biasing toward dusk/night palettes.
+
+⸻
+
+Who “selects” in practice?
+	•	You define ~8–12 palettes once.
+	•	The Theme Selector picks at runtime using rules, no API calls needed.
+	•	Users can override with a favorite pack (because some people really love pink sunsets).
+
+⸻
+
+Caching and performance
+	•	Procedural gradients render instantly; the only asset is a tiny texture PNG and optional Lottie JSON files.
+	•	Keep the last chosen theme in local storage; if the app opens offline, use it and cross-fade to the new one once context is known.
+
+⸻
+
+Minimal to build, maximal “ahhh”
+	•	10 palettes, 4 dayparts, 4 weather states, 6 mood tints.
+	•	One function chooses, one function ensures contrast, one cross-fade.
+	•	Zero designers on call. Zero AI calls. Zero sad rainy screens at noon unless the user likes sad rainy screens.
+
+There. Backgrounds feel smart and “personal,” cost you basically nothing, and won’t shove a storm cloud in someone’s face at lunchtime.
