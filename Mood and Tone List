@@ -1,0 +1,18 @@
+Moods (user-facing options)
+
+Keep it around 5–6. That’s the upper limit before it feels like a quiz.
+	1.	Anxious / stressed
+	2.	Sad / heavy-hearted
+	3.	Neutral / unsure
+	4.	Hopeful / reflective
+	5.	Grateful / joyful
+	6.	(Optional) Tired / drained — shows up often enough to matter
+
+Tones (your response layer)
+
+These are behind the scenes, mapped from moods. 4–5 tones is plenty:
+	1.	Calm / steady (for anxious, tired)
+	2.	Compassionate / gentle (for sad, heavy-hearted)
+	3.	Balanced / open (for neutral, unsure)
+	4.	Uplifting / warm (for grateful, joyful)
+	5.	Invitational / thoughtful (for hopeful, reflective)
