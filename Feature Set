@@ -1,0 +1,49 @@
+Exactly — no need to reinvent the wheel when YouVersion already showed what works. The trick is: copy → polish → monetize smartly. Here’s the list broken into features to copy, how to make them better, and whether they should be Free or Premium in your MVP.
+
+⸻
+
+Verse of the Day: Feature Set
+
+Feature	What YouVersion Does	How We Make It Better	Free / Premium
+Read Full Chapter	Opens whole chapter of the verse	Add short AI-generated chapter summary (“Key themes in 2 lines”)	Free
+Create Image	Static templates with verse text	Offer extra premium templates (seasonal, artistic, animated backgrounds)	Free (basic), Premium (packs)
+See Past Days	Scroll through archive	Add search by theme (peace, gratitude, hope) so they can binge	Free
+Compare Versions	Show KJV vs NIV vs others	Premium twist: show side-by-side with commentary/explanation	Free (basic 2 versions), Premium (multi + notes)
+Like / Share / Comment	Social counters, basic engagement	Add “challenge friends”: share your streak or quiz scorecard	Free
+Reminders / Notifications	Daily ping	Premium: smart reminders (bedtime, morning, mood-driven)	Free (1/day), Premium (smart)
+AI Reflection / Devotional	Not in YouVersion	Short, mood-based AI reflection under the verse	Premium
+Guided Journaling Prompt	Not in YouVersion	Linked to verse of the day (“How does this verse apply to your day?”)	Premium
+Audio Verse & Reflection	Some audio Bibles	AI TTS “Verse + 60s reflection”	Free (verse only), Premium (reflection + meditation)
+Verse Quiz	Not in YouVersion	Daily 3-question quiz about the verse → streak + XP	Free (1 quiz), Premium (unlimited quizzes)
+Mood Overlay	Not in YouVersion	Background + tone changes depending on user’s chosen mood & time of day	Free
+Export / Print Journal	Not in YouVersion	Monthly “Your Faith Journal” PDF with verse highlights + prompts	Premium
+Verse Packs / Collections	Not in YouVersion	Unlock themed packs: “Peace Verses Pack,” “Strength Pack”	Free (1 pack), Premium (all packs)
+
+
+⸻
+
+Bottom line for MVP
+	•	Always Free:
+	•	Read full chapter (+ auto-summary)
+	•	Basic image creation (few templates)
+	•	Past days archive
+	•	Compare 2 versions (KJV + 1 more)
+	•	Daily quiz (1 per day)
+	•	Basic notifications
+	•	Mood-based background
+	•	Premium (your money levers):
+	•	AI reflections under each verse
+	•	Guided journaling prompts + journal export
+	•	Meditation audio (verse + calm reading)
+	•	Unlimited quizzes + harder challenges
+	•	Smart reminders (sleep, focus, mood)
+	•	Extra image templates + packs
+	•	Multi-version comparisons with notes
+
+⸻
+
+This way the verse of the day becomes your Trojan horse: everyone gets it free, but all the “make it personal / make it deeper / make it beautiful” extras are locked to Premium.
+
+⸻
+
+Want me to design a mock Verse of the Day screen (layout) showing exactly where the free features end and the Premium upsell slots in, so you can see the user journey?
