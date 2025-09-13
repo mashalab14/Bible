@@ -1,0 +1,169 @@
+Time of day doesn’t change the tone label (calm, compassionate, uplifting, etc.)—it changes the framing inside that tone. In other words: same voice, but what it emphasizes shifts depending on whether it’s sunrise or midnight.
+
+Here’s how daypart influences work across the board:
+	•	Early Morning (5–8am)
+Language: beginnings, quiet, hope.
+Example (Calm): “As the sun rises, let these words steady your first steps.”
+	•	Morning (8–11am)
+Language: preparation, courage, energy.
+Example (Compassionate): “As you head into the day, carry this comfort with you.”
+	•	Midday (11am–2pm)
+Language: pause, perspective, gratitude for small wins.
+Example (Uplifting): “In the middle of your day, notice this joy shining through.”
+	•	Afternoon (2–6pm)
+Language: perseverance, endurance, steady encouragement.
+Example (Balanced): “As the day stretches on, let this verse remind you of balance.”
+	•	Evening (6–9pm)
+Language: reflection, family, slowing down.
+Example (Invitational): “As the day winds down, let this verse invite you into peace.”
+	•	Late Evening (9pm–12am)
+Language: rest, release, letting go.
+Example (Calm): “Before you sleep, let these words quiet your mind.”
+	•	Overnight (12–5am)
+Language: comfort, presence in solitude, companionship.
+Example (Compassionate): “In the stillness of night, these words keep watch with you.”
+
+So:
+	•	Mood sets tone (anxious = calm, sad = compassionate, etc.).
+	•	Daypart sets framing (morning = beginnings, night = rest).
+
+That’s how you avoid 42 different tones, but still give users reflections that feel alive to their actual moment.
+
+
+
+Time of day doesn’t change the tone label (calm, compassionate, uplifting, etc.)—it changes the framing inside that tone. In other words: same voice, but what it emphasizes shifts depending on whether it’s sunrise or midnight.
+
+Here’s how daypart influences work across the board:
+	•	Early Morning (5–8am)
+Language: beginnings, quiet, hope.
+Example (Calm): “As the sun rises, let these words steady your first steps.”
+	•	Morning (8–11am)
+Language: preparation, courage, energy.
+Example (Compassionate): “As you head into the day, carry this comfort with you.”
+	•	Midday (11am–2pm)
+Language: pause, perspective, gratitude for small wins.
+Example (Uplifting): “In the middle of your day, notice this joy shining through.”
+	•	Afternoon (2–6pm)
+Language: perseverance, endurance, steady encouragement.
+Example (Balanced): “As the day stretches on, let this verse remind you of balance.”
+	•	Evening (6–9pm)
+Language: reflection, family, slowing down.
+Example (Invitational): “As the day winds down, let this verse invite you into peace.”
+	•	Late Evening (9pm–12am)
+Language: rest, release, letting go.
+Example (Calm): “Before you sleep, let these words quiet your mind.”
+	•	Overnight (12–5am)
+Language: comfort, presence in solitude, companionship.
+Example (Compassionate): “In the stillness of night, these words keep watch with you.”
+
+So:
+	•	Mood sets tone (anxious = calm, sad = compassionate, etc.).
+	•	Daypart sets framing (morning = beginnings, night = rest).
+
+That’s how you avoid 42 different tones, but still give users reflections that feel alive to their actual moment.
+
+Want me to build a full sample row (say, “Anxious → Calm”) showing all 7 time-of-day variations in reflection style?
+
+
+Here’s the clean Mood × Time of Day → Tone matrix. This doesn’t give the full reflection text yet, just the tone assignment for each of the 42 combos. That way, your writers know which “voice” to use every time.
+
+⸻
+
+Matrix: 6 Moods × 7 Dayparts = 42 Tone Outputs
+
+Mood ↓ / Time →	Early Morning	Morning	Midday	Afternoon	Evening	Late Evening	Overnight
+Anxious / Stressed	Calm / steady	Calm / steady	Calm / steady	Calm / steady	Calm / steady	Calm / steady	Calm / steady
+Sad / Heavy-hearted	Compassionate	Compassionate	Compassionate	Compassionate	Compassionate	Compassionate	Compassionate
+Neutral / Unsure	Balanced	Balanced	Balanced	Balanced	Balanced	Balanced	Balanced
+Hopeful / Reflective	Invitational	Invitational	Invitational	Invitational	Invitational	Invitational	Invitational
+Grateful / Joyful	Uplifting	Uplifting	Uplifting	Uplifting	Uplifting	Uplifting	Uplifting
+Tired / Drained	Calm / steady	Calm / steady	Calm / steady	Calm / steady	Calm / steady	Calm / steady	Calm / steady
+
+
+⸻
+
+Why it looks simple
+	•	Each mood always maps to the same tone, regardless of time of day.
+	•	The daypart only changes the framing (morning = fresh start, evening = winding down, overnight = comfort).
+	•	This avoids exploding into 42 different tone types. You just get 5 tones total, consistently applied.
+
+⸻
+
+Do you want me to take this further and expand one full row (say, “Anxious”) into actual example reflection lines for all 7 dayparts—so you can see how tone + time combine in practice?
+
+
+
+
+Here’s the content matrix skeleton. It shows how Mood × Tone × Time of Day play together, so you can see where you’ll need unique reflections versus where you can safely merge.
+
+⸻
+
+Step 1 – Dimensions
+	•	Moods (6): Anxious, Sad, Neutral, Hopeful, Grateful, Tired
+	•	Tones (5): Calm, Compassionate, Balanced, Invitational, Uplifting
+	•	Dayparts (7): Early Morning, Morning, Midday, Afternoon, Evening, Late Evening, Overnight
+
+⸻
+
+Step 2 – Mapping moods to tones
+
+(to avoid tone-bloat)
+
+Mood	Tone (applied)
+Anxious	Calm / steady
+Sad	Compassionate
+Neutral	Balanced
+Hopeful	Invitational
+Grateful	Uplifting
+Tired	Calm / steady
+
+
+⸻
+
+Step 3 – Content Matrix
+
+(example rows for one mood; others follow same structure)
+
+Mood: Anxious → Tone: Calm
+
+Daypart	Content Guidance
+Early Morning	“Start the day grounded—this verse offers steadiness.”
+Morning	“As the day begins, carry these words for peace.”
+Midday	“Pause in your tasks—this verse calms your heart.”
+Afternoon	“Through the demands of the day, let this verse steady you.”
+Evening	“As the day closes, release your worries with these words.”
+Late Evening	“Quiet your mind before rest—this verse brings peace.”
+Overnight	“In the still night hours, these words keep you company.”
+
+You’d repeat that same structure for Sad → Compassionate, Grateful → Uplifting, etc.
+That gives you:
+	•	6 moods × 7 dayparts = 42 distinct content slots.
+	•	Each slot guided by its tone.
+	•	Writers can just “fill in the box” with a reflection line + journal prompt.
+
+⸻
+
+This matrix keeps it structured, avoids random duplication, and makes scaling possible without burning your team out.
+
+Do you want me to fill out the entire table for all 6 moods × 7 dayparts (42 guidance lines), or would you rather I build a reusable template and you just clone it mood by mood?
+
+
+
+Yes, otherwise you’re basically asking them to write a diary entry before they’ve even had their coffee. Free-text mood logging sounds noble, but in practice people either type “meh” or skip it.
+
+Give a small, clear set of options—icons or words—that match the emotional buckets you care about. Six or so is usually the sweet spot:
+	•	Anxious / stressed
+	•	Sad / heavy-hearted
+	•	Neutral / unsure
+	•	Hopeful / reflective
+	•	Grateful / joyful
+	•	Tired / drained (optional but very common)
+
+This way:
+	•	Users can tap once, done in 2 seconds.
+	•	You get clean data for tailoring reflections.
+	•	No decision fatigue from a laundry list of micro-emotions.
+
+Keep the wording simple, everyday—not clinical (“melancholy”) or cheesy (“blessed and highly favored”).
+
+Want me to sketch out how these could look as button labels with matching icons so the check-in feels natural and not like filling a survey?
