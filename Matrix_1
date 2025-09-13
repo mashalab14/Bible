@@ -1,0 +1,52 @@
+Here’s the content matrix skeleton. It shows how Mood × Tone × Time of Day play together, so you can see where you’ll need unique reflections versus where you can safely merge.
+
+⸻
+
+Step 1 – Dimensions
+	•	Moods (6): Anxious, Sad, Neutral, Hopeful, Grateful, Tired
+	•	Tones (5): Calm, Compassionate, Balanced, Invitational, Uplifting
+	•	Dayparts (7): Early Morning, Morning, Midday, Afternoon, Evening, Late Evening, Overnight
+
+⸻
+
+Step 2 – Mapping moods to tones
+
+(to avoid tone-bloat)
+
+Mood	Tone (applied)
+Anxious	Calm / steady
+Sad	Compassionate
+Neutral	Balanced
+Hopeful	Invitational
+Grateful	Uplifting
+Tired	Calm / steady
+
+
+⸻
+
+Step 3 – Content Matrix
+
+(example rows for one mood; others follow same structure)
+
+Mood: Anxious → Tone: Calm
+
+Daypart	Content Guidance
+Early Morning	“Start the day grounded—this verse offers steadiness.”
+Morning	“As the day begins, carry these words for peace.”
+Midday	“Pause in your tasks—this verse calms your heart.”
+Afternoon	“Through the demands of the day, let this verse steady you.”
+Evening	“As the day closes, release your worries with these words.”
+Late Evening	“Quiet your mind before rest—this verse brings peace.”
+Overnight	“In the still night hours, these words keep you company.”
+
+You’d repeat that same structure for Sad → Compassionate, Grateful → Uplifting, etc.
+That gives you:
+	•	6 moods × 7 dayparts = 42 distinct content slots.
+	•	Each slot guided by its tone.
+	•	Writers can just “fill in the box” with a reflection line + journal prompt.
+
+⸻
+
+This matrix keeps it structured, avoids random duplication, and makes scaling possible without burning your team out.
+
+Do you want me to fill out the entire table for all 6 moods × 7 dayparts (42 guidance lines), or would you rather I build a reusable template and you just clone it mood by mood?
