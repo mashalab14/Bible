@@ -1,0 +1,11 @@
+{
+  "BALANCED_D": {
+    "rate": "0.85",
+    "pitch": "-5st",
+    "sentence_break_ms": 1700,
+    "comma_break_ms": 800,
+    "verse_break_ms": 1900,
+    "voice": "en-US-Neural2-D",
+    "language": "en-US"
+  }
+}
