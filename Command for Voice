@@ -1,0 +1,5 @@
+source .venv/bin/activate
+
+python -c 'from build_chapter_audio import run_batch; run_batch(
+    ["ASV"],["BALANCED_D"],["GEN","EXO","LEV","NUM"]
+)'
